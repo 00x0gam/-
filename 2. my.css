@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a, a:link, a:visited{color:inherit; text-decoration: none;}
+li{list-style: none;}
+
+html {
+	text-align: center;         /* 텍스트나 인라인 요소들을 가운데 정렬 */
+	overflow-x: hidden;         /* 가로 스크롤바를 숨김 */
+	scroll-behavior: smooth;    /* 스크롤을 부드럽게 이동하도록 설정 */
+}
+
+
+
+body{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    overflow-x: hidden;
+}
+#ground{width: 100%; height: 800px;
+        background-image: linear-gradient(to right, skyblue 75%, aqua 25%);}
+        
+
+
+#logo{width: 250px; height: 80px; margin: 25px 0 0 25px;  background-color: blue;}
+header{margin-top: -63px;}
+
+.btn{
+display:flex;
+justify-content: space-between;
+flex-direction: column;
+width: 60px;
+margin: auto;
+}
+
+.btn headerbtn{width: 800px; height: 50px;}
+.headerbtn{
+	display:flex;
+	justify-content: space-between;
+	flex-direction: column;
+	width: 250px;
+	height: 15px;
+	margin: auto;
+	font-size: 18px;
+	font-weight:bold;
+}
+.btns{
+	width: 747px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+.btn a{
+	text-decoration:none;
+	padding: 5px;
+	line-height: 25px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	border: 2px solid #ccc;
+	border-bottom-color: black;
+	border-right-color: black;
+	border-top-color: whitesmoke;
+	border-left-color: whitesmoke;
+	color: black;
+}
+.headerbtn a{
+    background-color: #ccc;
+	padding: 6px;
+	line-height: 18px;
+}
+.btn a:hover {
+	border-bottom-color: whitesmoke;
+	border-right-color: whitesmoke;
+	border-top-color: black;
+	border-left-color: black;
+}
+.headerbtn a:hover{
+	border-bottom-color: whitesmoke;
+	border-right-color: whitesmoke;
+	border-top-color: black;
+	border-left-color: black;
+	background-color: blue;
+	color: yellow;
+}
+
+.title{width: 1000px; height: 150px;
+    display:flex;
+    margin: 0 auto;
+    margin-top: 60px;
+    background-color: magenta;}
+
+.the_body{width: 1000px; height: 245px;
+    display:flex;
+    margin: 0 auto;
+    margin-top: 15px;
+     }
+
+.welcome{width: 100%; height: 85px;
+    margin-top: 47px;
+    background-color: beige;
+    }
