@@ -7,7 +7,7 @@
 a, a:link, a:visited{color:inherit; text-decoration: none;}
 li{list-style: none;}
 
-html {
+html {height: 1700px;
 	text-align: center;         /* 텍스트나 인라인 요소들을 가운데 정렬 */
 	overflow-x: hidden;         /* 가로 스크롤바를 숨김 */
 	scroll-behavior: smooth;    /* 스크롤을 부드럽게 이동하도록 설정 */
@@ -24,9 +24,10 @@ body{
     overflow-x: hidden;
 }
 #ground{width: 100%; height: 800px;
-        background-image: linear-gradient(to right, skyblue 75%, aqua 25%);}
-        
-
+    background-color: skyblue;
+    /*background-image: linear-gradient(to right, skyblue 75%, aqua 25%)*/;
+    z-index: 1;
+}
 
 #logo{width: 250px; height: 80px; margin: 25px 0 0 25px;  background-color: blue;}
 header{margin-top: -63px;}
@@ -99,9 +100,44 @@ margin: auto;
     display:flex;
     margin: 0 auto;
     margin-top: 15px;
+
+    border: 2px solid gray;
      }
 
-.welcome{width: 100%; height: 85px;
+.welcome{width: 100%; height: 74px;
     margin-top: 47px;
     background-color: beige;
     }
+
+
+
+
+/*컨테이너에 guestbook, bar 나란히 배치함*/
+#container{width: 1000px; height: 740px;
+    display: flex;
+    justify-content: center;
+
+    z-index: 4;
+    margin-top: -120px;
+}
+
+.guestbook{width: 700px; height: 850px;
+    background-color: white;
+    border: 4px solid black;
+
+    float:left;
+    overflow-y: scroll;
+    height: 740px;
+
+    .container::-webkit-scrollbar-track {
+        background-color: gray;
+    }
+    .container::-webkit-scrollbar-thumb { 
+        background-color: skyblue;
+    }
+    .container::-webkit-scrollbar-button {
+        display: none;
+    }
+}
+
+.bar{width: 300px; height: 740px; background-color: tomato;}
